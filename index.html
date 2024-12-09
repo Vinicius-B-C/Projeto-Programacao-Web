@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete Sujeira</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagens/logo1.png" alt="Logo do Podrão" class="logo">
+        </div>
+        <h1>Sujeira</h1>
+        <nav>
+            <a href="#">Início</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Cardápio ▼</a>
+                <div class="dropdown-content">
+                    <a href="#menu">Comidas</a>
+                    <a href="#bebidas">Bebidas</a>
+                    <a href="#doces">Doces</a>
+                </div>
+            </div>
+            <a href="#">Contato</a>
+            <a href="https://www.google.com/maps/@-10.8263805,-42.7231872,15z" target="_blank">Nos Encontre</a>
+        </nav>
+    </header>
+
+    <!-- Carrinho flutuante -->
+    <div class="carrinho-container">
+        <a href="#" id="carrinho-icon">
+            🛒🗑️ <span id="carrinho-contador">0</span>
+        </a>
+    </div>
+
+    <main>
+        <section id="menu">
+            <article>
+                <img src="x-calabresa.jpg" alt="X-Calabresa">
+                <div class="item-info">
+                    <h2>X-Calabresão</h2>
+                    <p>A calabresa e na verdade um x-salada com salsicha velha.</p>
+                    <div class="preco-pedido">
+                        <p>R$22,00</p>
+                        <button class="btn-pedido" data-preco="22">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://imgs.search.brave.com/xJ8HrLmc7Jmxi2Fu3JrdreEkWf8fdD4xpUyowSFnz78/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zLmds/YmltZy5jb20vam8v/ZzEvZi9vcmlnaW5h/bC8yMDEyLzAzLzI2/L2JhdXJ1Xy1fbGFu/Y2hlX3Byb250by5q/cGc" alt="Bauru">
+                <div class="item-info">
+                    <h2>Bauru</h2>
+                    <p>Vem todas as sobras do dia.</p>
+                    <div class="preco-pedido">
+                        <p>R$16,00</p>
+                        <button class="btn-pedido" data-preco="16">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://segredosdomundo.r7.com/wp-content/uploads/2015/11/1610.jpg" alt="X-Salada Egg">
+                <h2>X-Infarto</h2>
+                <p>Oleo para fritar um boi inteiro.</p>
+                <p>R$25,00</p>
+                <button class="btn-pedido" data-preco="25">Fazer Pedido</button>
+            </article>
+            
+            <article>
+                <img src="dogao.jpg" alt="Dogão">
+                <h2>Dogão Podrão</h2>
+                <p>O verdadeiro cachorro-quente de rua: 3 salsichas, purê, vinagrete, batata palha, milho, ervilha e todos os molhos que existem.</p>
+                <p>R$15,00</p>
+                <button class="btn-pedido" data-preco="15">Fazer Pedido</button>
+            </article>
+            
+            
+            <article>
+                <img src="pastel-feira.jpg" alt="Pastel de Feira">
+                <h2>Pastel de Vento</h2>
+                <p>Quase um pastel de feira, so que pior.</p>
+                <p>R$10,00</p>
+                <button class="btn-pedido" data-preco="10">Fazer Pedido</button>
+            </article>
+        </section>
+
+        <!-- Adicione após a seção de lanches -->
+        <section id="bebidas">
+            <h2 class="section-title">Bebidas Duvidosas</h2>
+            
+            <article>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/garapa-cana-de-acucar-1.jpg" alt="Caldo de Cana">
+                <div class="item-info">
+                    <h2>Garapa da Moenda Enferrujada</h2>
+                    <p>Caldo de cana moído na moenda mais antiga da cidade. Gosto autêntico de ferrugem.</p>
+                    <div class="preco-pedido">
+                        <p>R$5,00</p>
+                        <button class="btn-pedido" data-preco="5">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-cafe-passado-1.jpg" alt="Café">
+                <div class="item-info">
+                    <h2>Café do Dia Anterior</h2>
+                    <p>Aquele café requentado 3 vezes que te deixa acordado por 2 dias.</p>
+                    <div class="preco-pedido">
+                        <p>R$2,00</p>
+                        <button class="btn-pedido" data-preco="2">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-refrigerante-caseiro-1.jpg" alt="Refri">
+                <div class="item-info">
+                    <h2>Refri Genérico</h2>
+                    <p>Aquele refrigerante de marca desconhecida que você nunca viu na vida. Sabor: Surpresa.</p>
+                    <div class="preco-pedido">
+                        <p>R$3,00</p>
+                        <button class="btn-pedido" data-preco="3">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/suco-natural-0.jpg" alt="Suco">
+                <div class="item-info">
+                    <h2>Suco Duvidoso</h2>
+                    <p>Suco natural de fruta que ninguém sabe qual é. Pode ser do dia, pode não ser.</p>
+                    <div class="preco-pedido">
+                        <p>R$6,00</p>
+                        <button class="btn-pedido" data-preco="6">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-vitamina-de-abacate-0.jpg" alt="Vitamina">
+                <div class="item-info">
+                    <h2>Vitamina Misteriosa</h2>
+                    <p>Uma vitamina com sabor indefinido. Dizem que faz bem pra saúde, mas ninguém tem certeza.</p>
+                    <div class="preco-pedido">
+                        <p>R$7,00</p>
+                        <button class="btn-pedido" data-preco="7">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Adicione após a seção de bebidas -->
+        <section id="doces">
+            <h2 class="section-title">Doces Duvidosos</h2>
+            
+            <article>
+                <img src="https://www.growbarato.net/blog/wp-content/uploads/2024/10/Schema-brisadeiro-480x270.jpg" alt="Brigadeiro">
+                <div class="item-info">
+                    <h2>Brigadeiro Misterioso</h2>
+                    <p>Brigadeiro com um efito surpresa.</p>
+                    <div class="preco-pedido">
+                        <p>R$2,00</p>
+                        <button class="btn-pedido" data-preco="2">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pudim-de-padaria.jpg" alt="Pudim">
+                <div class="item-info">
+                    <h2>Pudim Inclinado</h2>
+                    <p>Aquele pudim que não deu certo mas a gente vende mesmo assim. Tem calda... às vezes.</p>
+                    <div class="preco-pedido">
+                        <p>R$7,00</p>
+                        <button class="btn-pedido" data-preco="7">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-bolo-de-chocolate-simples-1.jpg" alt="Bolo">
+                <div class="item-info">
+                    <h2>Bolo do Dia Seguinte</h2>
+                    <p>Bolo de chocolate ressecado com cobertura misteriosa. Pode ter sido feito ontem, ou não.</p>
+                    <div class="preco-pedido">
+                        <p>R$5,00</p>
+                        <button class="btn-pedido" data-preco="5">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://www.shutterstock.com/image-photo/brazilian-peanut-candy-called-260nw-2248139187.jpg" alt="Paçoca">
+                <div class="item-info">
+                    <h2>Paçoca Desmontada</h2>
+                    <p>Aquela paçoca que quebrou no transporte. Vendemos os pedaços pelo mesmo preço.</p>
+                    <div class="preco-pedido">
+                        <p>R$1,50</p>
+                        <button class="btn-pedido" data-preco="1.5">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pe-de-moleque.jpg" alt="Pé de Moleque">
+                <div class="item-info">
+                    <h2>Pé de Moleque Dureza</h2>
+                    <p>Tão duro que pode quebrar seus dentes. Ótimo para quem quer visitar o dentista.</p>
+                    <div class="preco-pedido">
+                        <p>R$3,00</p>
+                        <button class="btn-pedido" data-preco="3">Fazer Pedido</button>
+                    </div>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Horário de "Funcionamento"</h3>
+                <p>Segunda a Domingo: Abre quando chega, fecha quando vai embora</p>
+                <p>Feriados: Se tiver alguém com disposição pra abrir...</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contatos Duvidosos</h3>
+                <p>📞 (11) 4002-8922 (Só funciona às vezes)</p>
+                <p>📱 Zap: Responde quando der</p>
+                <p>✉️ Email: sujeira@podrao.com.br (Nunca respondemos)</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Localização Suspeita</h3>
+                <p>🏪 Em algum lugar entre a padaria e o bar</p>
+                <p>🚗 Referência: Onde tinha aquela árvore que cortaram</p>
+                <p>🗺️ CEP: Tenta a sorte</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Avisos Importantes</h3>
+                <p>⚠️ Não nos responsabilizamos por nada</p>
+                <p>🤢 Atestado médico por nossa conta*</p>
+                <p><small>*Só se sobreviver</small></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Sujeira Lanches - Onde a fome fala mais alto que o bom senso</p>
+        </div>
+        <div class="patrocinadores">
+            <p class="patrocinadores-texto">
+                Patrocinado por: 
+                <span class="marca">IFTO - Palmas</span> | 
+                <span class="marca">Criança Esperança</span> | 
+                <span class="marca">Anvisa©</span> | 
+                <span class="marca">Conselho de Medicina¿</span>
+                <span class="marca">Fatal Model</span>
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
